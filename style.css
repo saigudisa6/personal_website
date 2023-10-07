@@ -32,7 +32,7 @@ body{
 }
 
 .logo{
-    width: 8%;
+    max-width: 8%;
 }
 
 .links-container{
@@ -59,7 +59,6 @@ body{
     align-items: center;
     width: 90%;
     height: 40vw;
-
 }
 
 .about-me{
@@ -112,11 +111,11 @@ body{
     width: 75%;
     border-top-style: solid;
     border-color: rgba(76, 75, 75, 0.42);
-    height: 60%;
+    height: 70%;
 }
 
 .reveal-item{
-    transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
+    transition: opacity 0.3s ease 0.2s, transform 0.4s ease 0.2s;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -155,7 +154,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 15em;
-    padding: 1em;
+    padding: 1%;
     height: 30em;
 }
 
@@ -198,10 +197,13 @@ body{
 
 .collage-pic{
     width: 100%;
+
+  background-size: cover;
+  background-position: center;
 }
 
 .background-info-container{
-    width: 30em;
+    max-width: 30em;
     text-align: center;
 }
 
@@ -294,6 +296,51 @@ ul li b{
 
 .icons{
     width: 40%;
+}
+
+@media(max-width: 800px){
+    .first-page{
+        width: 100vw;
+        /* height: 500px; */
+        height: 80vh;
+    }
+
+    .body{
+        height: 100vh;
+    }
+
+    .collage-container{
+        width: 80%;
+    }
+
+    .third-page,.fourth-page{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fourth-page{
+        height: 290vh;
+
+    }
+
+    .third-page{
+        padding-top: 15%;
+        height: 290vh;
+    }
+
+    ul li b{
+        font-size: 5vw;
+    }
+
+    .links-container{
+        width: 60%;
+    }
+
+    .link{
+        font-size: 2vw;
+    }
 }
 
 
